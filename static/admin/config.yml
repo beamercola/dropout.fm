@@ -6,6 +6,18 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "track"
+    label: "Track"
+    folder: "src/tracks"
+    create: true
+    slug: "{{permalink}}"
+    fields:
+      - {label: "Title", name: "title", widget: "text"}
+      - {label: "Artist", name: "artist", widget: "text"}
+      - {label: "Year", name: "year", widget: "text"}
+      - {label: "Permalink", name: "permalink", widget: "text"}
+      - {label: "Cover", name: "cover", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
