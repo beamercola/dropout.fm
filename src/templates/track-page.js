@@ -41,6 +41,9 @@ export const pageQuery = graphql`
         year,
         cover {
           publicURL
+        },
+        file {
+          publicURL
         }
       }
     }

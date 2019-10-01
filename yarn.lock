@@ -7178,7 +7178,7 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^2.5.0:
+hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
@@ -12181,6 +12181,17 @@ react-sortable-hoc@^1.0.0:
     invariant "^2.2.4"
     prop-types "^15.5.7"
 
+react-soundplayer@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-soundplayer/-/react-soundplayer-1.0.4.tgz#333b0edc41694a3f883117898d962af061bb8d3f"
+  integrity sha512-Rnp3qdG3ztG2eEHBQ4Muqhh7EpilyUi/+CiVPsp6kl0ErS0RnnYaB70JFk240BOdnwDWrAel6sABPq4ehYb0NQ==
+  dependencies:
+    classnames "^2.2.5"
+    hoist-non-react-statics "^2.3.1"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+    soundcloud-audio "^1.2.2"
+
 react-split-pane@^0.1.85:
   version "0.1.87"
   resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.87.tgz#a7027ae554abfacca35f5f780288b07fe4ec4cbd"
@@ -13640,6 +13651,11 @@ sort-keys@^2.0.0:
   integrity sha1-ZYU1WEhh7JfXMNbPQYIuH1ZoQSg=
   dependencies:
     is-plain-obj "^1.0.0"
+
+soundcloud-audio@^1.2.2:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/soundcloud-audio/-/soundcloud-audio-1.4.0.tgz#2d9ceeaa8a3c63d814e18c4c2602fe3be9a99655"
+  integrity sha512-2kHyTfu+KNOLZuRKynaeTmj846deC1WbiDTu7rkd1/93lk9FxtgbGkNQSIy5H4gxZD9EEeTdXhkE7uiMwEXuEQ==
 
 source-list-map@^2.0.0:
   version "2.0.1"
