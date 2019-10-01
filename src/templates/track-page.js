@@ -39,6 +39,9 @@ export const pageQuery = graphql`
         title,
         artist,
         year,
+        cover {
+          publicURL
+        }
       }
     }
   }

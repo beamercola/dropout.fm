@@ -6,3 +6,6 @@ body {
   @apply font-sans;
   background-color: #FDF9E4;
 }
+
+.h-96 { height: 24rem; }
+.w-96 { width: 24rem; }
