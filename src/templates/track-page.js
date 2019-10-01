@@ -15,7 +15,9 @@ const TrackPage = ({ data }) => {
         <title>{`${post.frontmatter.title}`}</title>
         <meta name="description" content={`${post.frontmatter.description}`} />
       </Helmet>
-      <PlayerCard track={post.frontmatter} />
+      <div className="flex items-center justify-center w-screen h-screen">
+        <PlayerCard track={post.frontmatter} />
+      </div>
     </Layout>
   )
 }
@@ -34,7 +36,9 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        title
+        title,
+        artist,
+        year,
       }
     }
   }
