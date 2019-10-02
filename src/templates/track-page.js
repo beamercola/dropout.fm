@@ -14,6 +14,7 @@ const TrackPage = ({ data }) => {
       <Helmet titleTemplate="%s">
         <title>{`${track.frontmatter.title} - ${track.frontmatter.artist}`}</title>
         <meta name="description" content={`${track.frontmatter.description}`} />
+        <meta property="og:title" content={`${track.frontmatter.title} - ${track.frontmatter.artist}`} />
         <meta property="og:image" content={track.frontmatter.cover && track.frontmatter.cover.publicURL} />
         <meta property="og:type" content="music.song" />
         <meta property="og:audio" content={track.frontmatter.file && track.frontmatter.file.publicURL} />

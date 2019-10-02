@@ -10,13 +10,11 @@ export default class Subscribe extends React.Component {
     };
   }
 
-  _handleSubmit(e) {
-    console.log(this.state)
+  handleSubmit(e) {
     e.preventDefault();
     addToMailchimp(this.state.email)
     .then(data => {
       this.setState({ data: data })
-      console.log(data)
     })
   }
 
@@ -26,7 +24,7 @@ export default class Subscribe extends React.Component {
 
   render () {
     return (
-      <form onSubmit={this._handleSubmit.bind(this)}>
+      <form onSubmit={this.handleSubmit.bind(this)}>
         <div className="card relative">
           <input className="h-12 w-auto px-3 z-10 w-full" type="email" placeholder="email address" onChange={this.handleChange.bind(this)} />
           <input className="p-2 bg-black text-white rounded absolute inset-y-0 right-0 m-1 z-20 text-xs leading-none" type="submit" value="submit" />
