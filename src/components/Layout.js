@@ -25,7 +25,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       {children}
       <footer className="text-xs mt-8 px-6 text-center md:absolute md:inset-x-0 md:bottom-0 md:h-10">
-        courtesey of <a className="underline" href="https://twitter.com/beamercola">@beamercola</a>
+        say hi <a className="underline" href="https://twitter.com/beamercola">@beamercola</a>
       </footer>
     </>
   )
