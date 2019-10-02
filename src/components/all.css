@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-sans;
-  background-color: #FDF9E4;
+::selection {
+  @apply bg-yellow-300
 }
 
-.h-96 { height: 24rem; }
-.w-96 { width: 24rem; }
+body {
+  @apply font-mono;
+  background-color: #E5E6D8;
+}
+
+.card {
+  @apply border border-black rounded-lg bg-white overflow-hidden shadow;
+}
