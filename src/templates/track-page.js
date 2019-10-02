@@ -4,25 +4,26 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PlayerCard from '../components/PlayerCard'
+import Subscribe from '../components/Subscribe'
 
 const TrackPage = ({ data }) => {
   const { markdownRemark: track } = data
 
   return (
     <Layout>
-      <Helmet titleTemplate="%s | Blog">
-        <title>{`${track.frontmatter.title}`}</title>
+      <Helmet titleTemplate="%s">
+        <title>{`${track.frontmatter.title} - ${track.frontmatter.artist}`}</title>
         <meta name="description" content={`${track.frontmatter.description}`} />
+        <meta property="og:image" content={track.frontmatter.cover && track.frontmatter.cover.publicURL} />
+        <meta property="og:type" content="music.song" />
+        <meta property="og:audio" content={track.frontmatter.file && track.frontmatter.file.publicURL} />
       </Helmet>
       <div className="flex flex-col md:items-center md:justify-center md:w-screen md:h-screen p-4">
         <PlayerCard track={track.frontmatter} />
 
         <div className="md:w-96 mt-10">
           <label className="text-xs px-3 mb-2 block">join newsletter, saturday mornings</label>
-          <div className="card relative">
-            <input className="h-12 w-auto px-3 z-10 w-full" type="text" placeholder="email address" />
-            <button className="p-2 bg-black text-white rounded absolute inset-y-0 right-0 m-1 z-20 text-xs leading-none">submit</button>
-          </div>
+          <Subscribe />
         </div>
       </div>
     </Layout>
