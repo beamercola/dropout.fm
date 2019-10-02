@@ -10,7 +10,8 @@ collections:
     label: "Track"
     folder: "src/pages/tracks"
     create: true
-    slug: "{{slug}}"
+    slug: "{{artist}}-{{title}}"
+    summary: "{{artist}}: {{title}} ({{year}})"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "track-page"}
       - {label: "Title", name: "title", widget: "string"}
