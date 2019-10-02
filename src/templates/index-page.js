@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
 import Subscribe from '../components/Subscribe'
 
 import Layout from '../components/Layout'
@@ -14,7 +12,6 @@ const IndexPage = ({ data }) => {
           <label className="text-xs px-3 mb-2 block">join the newsletter, saturday mornings</label>
           <Subscribe />
         </div>
-
       </div>
     </Layout>
   )
