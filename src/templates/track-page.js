@@ -12,18 +12,18 @@ const TrackPage = ({ data }) => {
   return (
     <Layout>
       <Helmet titleTemplate="%s">
-        <title>{`${track.frontmatter.title} - ${track.frontmatter.artist}`}</title>
+        <title>{`${track.frontmatter.artist}: ${track.frontmatter.title} [dropout.fm]`}</title>
         <meta name="description" content={`${track.frontmatter.description}`} />
-        <meta property="og:title" content={`${track.frontmatter.title} - ${track.frontmatter.artist}`} />
+        <meta property="og:title" content={`${track.frontmatter.artist}: ${track.frontmatter.title}`} />
         <meta property="og:image" content={track.frontmatter.cover && track.frontmatter.cover.publicURL} />
         <meta property="og:type" content="music.song" />
         <meta property="og:audio" content={track.frontmatter.file && track.frontmatter.file.publicURL} />
       </Helmet>
-      <div className="flex flex-col md:items-center md:justify-center md:w-screen md:h-screen p-4">
+      <div className="flex flex-col sm:items-center sm:justify-center sm:w-screen sm:h-screen p-4">
         <PlayerCard track={track.frontmatter} />
 
-        <div className="md:w-96 mt-10">
-          <label className="text-xs px-3 mb-2 block">join newsletter, saturday mornings</label>
+        <div className="sm:w-96 mt-6 sm:mt-10">
+          <label className="text-xs px-3 mb-2 block">join the newsletter, saturday mornings</label>
           <Subscribe />
         </div>
       </div>
