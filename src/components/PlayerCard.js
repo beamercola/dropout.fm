@@ -20,10 +20,11 @@ const Player = withCustomAudio(props => {
   return (
     <div className="card flex flex-col sm:w-96 w-auto">
       <img className="h-auto sm:h-96 border-b border-black cursor-pointer" src={track.cover && track.cover.publicURL} onClick={() => play()} alt={track.title} />
-      <section className="px-3 py-2 flex flex-col cursor-default" onClick={() => play()}>
+      <section className="px-3 py-2 flex flex-col cursor-default">
         <h1 className="font-bold">{track.title}</h1>
         <h2 className="">{track.artist}</h2>
         <div className="">{track.year}</div>
+        <div>{track.file.publicURL}</div>
       </section>
       {track.file && (
         <section className="relative px-3 py-2 border-t border-black cursor-pointer">
