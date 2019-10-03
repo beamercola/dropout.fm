@@ -1,6 +1,6 @@
 ---
 templateKey: track-page
-title: Dig
+title: 3 Moons
 artist: Rob Mounsey + Flying Monkey Orchestra
 year: '1989'
 cover: /assets/20190930-dig.jpeg
