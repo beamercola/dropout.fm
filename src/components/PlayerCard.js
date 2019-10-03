@@ -24,7 +24,6 @@ const Player = withCustomAudio(props => {
         <h1 className="font-bold">{track.title}</h1>
         <h2 className="">{track.artist}</h2>
         <div className="">{track.year}</div>
-        <div>{track.file.publicURL}</div>
       </section>
       {track.file && (
         <section className="relative px-3 py-2 border-t border-black cursor-pointer">
