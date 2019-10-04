@@ -15,9 +15,9 @@ const TrackPage = ({ data }) => {
         <title>{`${track.frontmatter.artist}: ${track.frontmatter.title} [dropout.fm]`}</title>
         <meta name="description" content={`${track.frontmatter.description}`} />
         <meta property="og:title" content={`${track.frontmatter.artist}: ${track.frontmatter.title}`} />
-        <meta property="og:image" content={track.frontmatter.cover && track.frontmatter.cover.publicURL} />
+        <meta property="og:image" content={track.frontmatter.cover} />
         <meta property="og:type" content="music.song" />
-        <meta property="og:audio" content={track.frontmatter.file && track.frontmatter.file.publicURL} />
+        <meta property="og:audio" content={track.frontmatter.file} />
       </Helmet>
       <div className="flex flex-col sm:items-center sm:justify-center sm:w-screen sm:h-screen p-4">
         <PlayerCard track={track.frontmatter} />
