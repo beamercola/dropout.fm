@@ -23,9 +23,6 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
       </Helmet>
       {children}
-      <footer className="text-xs my-8 px-6 text-center md:absolute md:inset-x-0 md:bottom-0">
-        say hi <a className="underline" href="https://twitter.com/beamercola">@beamercola</a>
-      </footer>
     </>
   )
 }

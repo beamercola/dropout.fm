@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PlayerCard from '../components/PlayerCard'
 import Subscribe from '../components/Subscribe'
+import Footer from '../components/Footer'
 
 const TrackPage = ({ data }) => {
   const { markdownRemark: track } = data
@@ -26,6 +27,8 @@ const TrackPage = ({ data }) => {
           <label className="text-xs px-3 mb-2 block">join the newsletter, saturday mornings</label>
           <Subscribe />
         </div>
+
+        <Footer />
       </div>
     </Layout>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import Subscribe from '../components/Subscribe'
+import Footer from '../components/Footer'
 
 import Layout from '../components/Layout'
 const IndexPage = ({ data }) => {
@@ -11,6 +12,7 @@ const IndexPage = ({ data }) => {
           <p class="mb-12 mt-2 px-3 text-lg">a small weekly music blog</p>
           <label className="text-xs px-3 mb-2 block">join the newsletter, saturday mornings</label>
           <Subscribe />
+          <Footer />
         </div>
       </div>
     </Layout>
