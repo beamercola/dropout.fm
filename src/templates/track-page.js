@@ -24,7 +24,7 @@ const TrackPage = ({ data }) => {
         <PlayerCard track={track.frontmatter} />
 
         <div className="sm:w-96 mt-6 sm:mt-10">
-          <label className="text-xs px-3 mb-2 block">join the newsletter, saturday mornings</label>
+          <label className="text-xs px-3 mb-2 block dark:text-gray-600">join the newsletter, saturday mornings</label>
           <Subscribe />
         </div>
 

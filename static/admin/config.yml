@@ -24,22 +24,32 @@ collections:
     slug: "{{artist}}-{{title}}"
     summary: "{{artist}}: {{title}} ({{year}})"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "track-page"}
-      - {label: "Artist", name: "artist", widget: "string"}
-      - {label: "Album", name: "album", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Year", name: "year", widget: "string"}
-      - {label: "Cover", name: "cover", widget: "image"}
-      - {label: "File", name: "file", widget: "file"}
-      - {label: "Publish Date", name: "datetime", widget: "datetime", required: false, timeFormat: false}
+      - {name: templateKey, widget: hidden, default: track-page}
+      - {name: artist, widget: string}
+      - {name: album, widget: string}
+      - {name: title, widget: string}
+      - {name: year, widget: string}
+      - {name: cover, widget: image}
+      - {name: file, widget: file}
+      - {label: "Publish Date", name: datetime, widget: datetime, required: false, timeFormat: false, default: ""}
   - name: "mix"
     label: "Mix"
     folder: "src/pages/mixes"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "mix-page"}
-      - {label: "Image", name: "image", widget: "file"}
-      - {label: "Week", name: "week", widget: "datetime"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Tracks", name: "tracks", widget: "relation", collection: "tracks", searchFields: ["title", "artist"]}
+      - {name: templateKey, widget: hidden, default: mix-page}
+      - {name: image, widget: file}
+      - {name: week, widget: datetime}
+      - {name: title, widget: string}
+      - {name: tracks, widget: relation, collection: tracks, searchFields: [title, artist]}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Index"
+        name: "index"
+        file: "src/pages/index.md"
+        fields:
+          - {name: title, widget: string}
+          - {name: subtitle, widget: string}
+          - {name: newsletter, widget: boolean, label: "Display Newsletter"}
