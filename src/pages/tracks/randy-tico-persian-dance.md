@@ -3,8 +3,10 @@ templateKey: track-page
 title: Persian Dance
 artist: Randy Tico
 year: '1990'
-cover: 'https://ucarecdn.com/aabdb143-b48e-4b47-8c3b-5ccaf18595dd/'
-file: 'https://ucarecdn.com/310d92d0-eed5-48d9-babc-84d2f5b3b76f/'
+cover: >-
+  https://res.cloudinary.com/dropoutfm/image/upload/v1570163054/Tracks/randy-tico-earth-dance.jpg
+file: >-
+  https://res.cloudinary.com/dropoutfm/video/upload/v1570165785/Tracks/randy-tico-persian-dance.mp3
 date: now
 ---
 
