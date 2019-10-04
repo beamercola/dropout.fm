@@ -48,12 +48,8 @@ export const pageQuery = graphql`
         title,
         artist,
         year,
-        cover {
-          publicURL
-        },
-        file {
-          publicURL
-        }
+        cover,
+        file,
       }
     }
   }
