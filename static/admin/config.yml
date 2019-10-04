@@ -6,9 +6,15 @@ media_folder: static/assets
 public_folder: /assets
 
 media_library:
-  name: uploadcare
+  name: cloudinary
   config:
-    publicKey: 49c9c8a983d0033fb5fe
+    cloud_name: dropoutfm
+    api_key: 748393431139731
+
+# media_library:
+#   name: uploadcare
+#   config:
+#     publicKey: 49c9c8a983d0033fb5fe
 
 collections:
   - name: "track"
