@@ -2,9 +2,12 @@ import React from 'react'
 import { Progress, Timer } from 'react-soundplayer/components';
 import { withCustomAudio } from 'react-soundplayer/addons';
 
-const PlayerCard = ({ track }) => (
-  <Player streamUrl={track.file && track.file.publicURL} track={track} />
-)
+const PlayerCard = ({ track }) => {
+  console.log(track)
+  return (
+    <Player streamUrl={track.file && track.file.publicURL} track={track} />
+  )
+}
 
 const Player = withCustomAudio(props => {
   const { soundCloudAudio, playing, track, currentTime } = props;
@@ -29,6 +32,7 @@ const Player = withCustomAudio(props => {
         <section className="relative px-3 py-2 border-t border-black cursor-pointer">
           <Timer className="custom-player-timer z-20 relative pointer-events-none" duration={track ? track.duration / 1000 : 0} currentTime={currentTime} {...props} />
           <Progress className="absolute inset-y-0 left-0 h-full w-full z-10" innerClassName="bg-yellow-300 h-full" {...props} />
+          <div>{track.file && track.file.publicURL}</div>
         </section>
       )}
     </div>
