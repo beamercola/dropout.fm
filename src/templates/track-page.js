@@ -50,6 +50,7 @@ export const pageQuery = graphql`
       frontmatter {
         title,
         artist,
+        album,
         year,
         cover,
         file,
