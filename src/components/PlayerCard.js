@@ -32,6 +32,7 @@ const Player = withCustomAudio(props => {
         <section className="relative px-3 py-2 border-t border-black cursor-pointer">
           <Timer className="custom-player-timer z-20 relative pointer-events-none" duration={track ? track.duration / 1000 : 0} currentTime={currentTime} {...props} />
           <Progress className="absolute inset-y-0 left-0 h-full w-full z-10" innerClassName="bg-yellow-300 h-full" {...props} />
+          <div>{track.file}</div>
         </section>
       )}
     </div>
