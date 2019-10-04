@@ -25,12 +25,13 @@ collections:
     summary: "{{artist}}: {{title}} ({{year}})"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "track-page"}
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Artist", name: "artist", widget: "string"}
+      - {label: "Album", name: "album", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Year", name: "year", widget: "string"}
       - {label: "Cover", name: "cover", widget: "image"}
       - {label: "File", name: "file", widget: "file"}
-      - {label: "Publish Date", name: "date", widget: "datetime", default: "now"}
+      - {label: "Publish Date", name: "datetime", widget: "datetime", required: false, timeFormat: false}
   - name: "mix"
     label: "Mix"
     folder: "src/pages/mixes"

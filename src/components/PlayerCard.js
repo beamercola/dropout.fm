@@ -3,7 +3,6 @@ import { Progress, Timer } from 'react-soundplayer/components';
 import { withCustomAudio } from 'react-soundplayer/addons';
 
 const PlayerCard = ({ track }) => {
-  console.log(track)
   return (
     <Player streamUrl={track.file} track={track} />
   )
@@ -20,13 +19,24 @@ const Player = withCustomAudio(props => {
     }
   }
 
+  const icon = playing ? (
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pause" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z"></path></svg>
+  ) : (
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>
+  )
+
   return (
     <div className="card flex flex-col sm:w-96 w-auto">
       <img className="h-auto sm:h-96 border-b border-black cursor-pointer" src={track.cover} onClick={() => play()} alt={track.title} />
-      <section className="px-3 py-2 flex flex-col cursor-default">
-        <h1 className="font-bold">{track.title}</h1>
-        <h2 className="">{track.artist}</h2>
-        <div className="">{track.year}</div>
+      <section className="px-3 py-2 flex items-center cursor-pointer" onClick={() => play()}>
+        <div className="flex-grow">
+          <h1 className="font-bold">{track.title}</h1>
+          <h2 className="">{track.artist}</h2>
+          <div className="">{track.album}, {track.year}</div>
+        </div>
+        <div className="flex-shrink h-6 w-6 mr-2 -mt-1">
+          {icon}
+        </div>
       </section>
       {track.file && (
         <section className="relative px-3 py-2 border-t border-black cursor-pointer">
