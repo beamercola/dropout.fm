@@ -9,11 +9,6 @@
   }
 }
 
-body {
-  @apply font-mono;
-  background-color: #E5E6D8;
-}
-
 .card {
   @apply border border-black rounded-lg bg-white overflow-hidden shadow;
 }

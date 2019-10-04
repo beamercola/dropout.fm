@@ -7,7 +7,7 @@ const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <>
-      <Helmet bodyAttributes={{ class: "font-mono dark:bg-gray-900" }}>
+      <Helmet bodyAttributes={{ class: "font-mono bg-canvas dark:bg-gray-900" }}>
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />

@@ -7,6 +7,9 @@ module.exports = {
       mono: ['SFMono-Regular', 'monospace']
     },
     extend: {
+      colors: {
+        canvas: '#E5E6D8',
+      },
       spacing: {
         '72': '18rem',
         '84': '21rem',
