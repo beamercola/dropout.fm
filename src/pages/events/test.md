@@ -1,5 +1,5 @@
 ---
 templateKey: event-page
-name: test
+name: testing
 ---
 
