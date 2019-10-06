@@ -22,7 +22,7 @@ collections:
     folder: "src/pages/tracks"
     create: true
     slug: "{{artist}}-{{title}}"
-    summary: "{{artist}}: {{title}} ({{year}})"
+    summary: "{{artist}}: {{title}}"
     fields:
       - {name: templateKey, widget: hidden, default: track-page}
       - {name: artist, widget: string}
