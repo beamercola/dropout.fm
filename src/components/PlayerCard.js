@@ -4,7 +4,7 @@ import { withCustomAudio } from 'react-soundplayer/addons';
 import slug from '../components/slug'
 
 const PlayerCard = ({ track }) => (
-  <Player streamUrl={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(track.artist, track.title)}.mp3`} track={track} slug={slug} clientId="X" />
+  <Player streamUrl={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(`${track.artist}-${track.title}`)}.mp3`} track={track} slug={slug} clientId="X" />
 )
 
 const Player = withCustomAudio(props => {
@@ -25,8 +25,8 @@ const Player = withCustomAudio(props => {
   )
 
   return (
-    <div className="card flex flex-col sm:w-96 w-auto dark:bg-gray-800 dark:text-indigo-200">
-      <img className="h-auto sm:h-96 border-b border-black cursor-pointer" src={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(track.artist, track.album)}.png`} onClick={() => play()} alt={track.title} />
+    <div className="card flex flex-col sm:w-96 w-auto dark:bg-gray-800 dark:text-indigo-200 flex-shrink-0">
+      <img className="h-auto sm:h-96 border-b border-black cursor-pointer" src={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(`${track.artist}-${track.album}`)}.png`} onClick={() => play()} alt={track.title} />
       <section className="px-3 py-2 flex items-center cursor-pointer" onClick={() => play()}>
         <div className="flex-grow">
           <h1 className="font-bold">{track.title}</h1>
@@ -37,12 +37,10 @@ const Player = withCustomAudio(props => {
           {icon}
         </div>
       </section>
-      {track.file && (
-        <section className="relative px-3 py-2 border-t border-black cursor-pointer">
-          <Timer className="custom-player-timer z-20 relative pointer-events-none" duration={track ? track.duration / 1000 : 0} currentTime={currentTime} {...props} />
-          <Progress className="absolute inset-y-0 left-0 h-full w-full z-10" innerClassName="bg-indigo-700 h-full" {...props} />
-        </section>
-      )}
+      <section className="relative px-3 py-2 border-t border-black cursor-pointer">
+        <Timer className="custom-player-timer z-20 relative pointer-events-none" duration={track ? track.duration / 1000 : 0} currentTime={currentTime} {...props} />
+        <Progress className="absolute inset-y-0 left-0 h-full w-full z-10" innerClassName="bg-indigo-700 h-full" {...props} />
+      </section>
     </div>
   )
 })
