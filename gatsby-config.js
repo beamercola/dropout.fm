@@ -29,9 +29,9 @@ module.exports = {
       resolve: 'gatsby-plugin-fathom',
       options: {
         // Fathom server URL. Defaults to `cdn.usefathom.com`
-        trackingUrl: 'dropoutfm.usesfathom.com',
+        // trackingUrl: 'dropoutfm.usesfathom.com',
         // Unique site id
-        // siteId: 'FATHOM_SITE_ID'
+        siteId: 'FTGSYEIY'
       }
     },
     {
