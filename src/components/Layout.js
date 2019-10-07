@@ -21,7 +21,6 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
-        <meta property="twitter:card" content="summary_large_image" />
         <script type='text/javascript'>
           {`
             (function (w,d,s,o,f,js,fjs) {
