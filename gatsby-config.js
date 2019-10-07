@@ -26,6 +26,15 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-fathom',
+      options: {
+        // Fathom server URL. Defaults to `cdn.usefathom.com`
+        trackingUrl: 'dropoutfm.usesfathom.com',
+        // Unique site id
+        // siteId: 'FATHOM_SITE_ID'
+      }
+    },
+    {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
         endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=abd8beb5663a9d4d95ecdf87a&amp;id=cfff847f8c'
