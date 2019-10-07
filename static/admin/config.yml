@@ -29,8 +29,8 @@ collections:
       - {name: album, widget: string}
       - {name: title, widget: string}
       - {name: year, widget: string}
-      - {name: cover, widget: image}
-      - {name: file, widget: file}
+      - {name: cover, widget: image, required: false}
+      - {name: file, widget: file, required: false}
       - {label: "Publish Date", name: datetime, widget: datetime, required: false, timeFormat: false, default: ""}
   - name: "mix"
     label: "Mix"

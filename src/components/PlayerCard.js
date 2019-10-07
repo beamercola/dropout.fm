@@ -1,12 +1,11 @@
 import React from 'react'
 import { Progress, Timer } from 'react-soundplayer/components';
 import { withCustomAudio } from 'react-soundplayer/addons';
+import slug from '../components/slug'
 
-const PlayerCard = ({ track }) => {
-  return (
-    <Player streamUrl={track.file} track={track} />
-  )
-}
+const PlayerCard = ({ track }) => (
+  <Player streamUrl={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(track.artist, track.title)}.mp3`} track={track} slug={slug} clientId="X" />
+)
 
 const Player = withCustomAudio(props => {
   const { soundCloudAudio, playing, track, currentTime } = props;
@@ -27,7 +26,7 @@ const Player = withCustomAudio(props => {
 
   return (
     <div className="card flex flex-col sm:w-96 w-auto dark:bg-gray-800 dark:text-indigo-200">
-      <img className="h-auto sm:h-96 border-b border-black cursor-pointer" src={track.cover} onClick={() => play()} alt={track.title} />
+      <img className="h-auto sm:h-96 border-b border-black cursor-pointer" src={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(track.artist, track.album)}.png`} onClick={() => play()} alt={track.title} />
       <section className="px-3 py-2 flex items-center cursor-pointer" onClick={() => play()}>
         <div className="flex-grow">
           <h1 className="font-bold">{track.title}</h1>
