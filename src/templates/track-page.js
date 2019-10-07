@@ -21,6 +21,8 @@ const TrackPage = ({ data }) => {
         <meta property="og:image" content={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(`${track.artist}-${track.album}`)}.png`} />
         <meta property="og:type" content="music.song" />
         <meta property="og:audio" content={track.file} />
+        <meta property="twitter:title" content={track.title} />
+        <meta property="twitter:description" content={`${track.artist}, ${track.album} (${track.year})`} />
       </Helmet>
       <div className="flex flex-col sm:items-center sm:justify-center sm:w-screen sm:h-screen p-4">
         <PlayerCard track={track} />
