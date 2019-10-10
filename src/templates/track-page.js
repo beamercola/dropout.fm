@@ -21,7 +21,8 @@ const TrackPage = ({ data }) => {
         <meta property="og:image" content={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(`${track.artist}-${track.album}`)}.png`} />
         <meta property="og:type" content="music.song" />
         <meta property="og:audio" content={track.file} />
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:site" content="@beamercola" />
         <meta property="twitter:title" content={track.title} />
         <meta property="twitter:description" content={`${track.artist}, ${track.album} (${track.year})`} />
       </Helmet>
