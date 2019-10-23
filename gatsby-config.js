@@ -7,6 +7,15 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: `keykQ5QsyEHYOaFAL`, // may instead specify via env, see below
+        tables: [
+          { tableName: `Tracks`, baseId: `appXGWb8lSzKbGmMI` }
+        ]
+      }
+    },  
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,

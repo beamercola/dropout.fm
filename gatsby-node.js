@@ -8,16 +8,11 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              templateKey
-            }
+      allAirtable {
+        nodes {
+          id
+          data {
+            Slug
           }
         }
       }
@@ -28,35 +23,16 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
-
-    posts.forEach(edge => {
-      const id = edge.node.id
+    result.data.allAirtable.nodes.forEach(node => {
+      const track = node.data
       createPage({
-        path: edge.node.fields.slug.replace("tracks/", ""),
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        // additional data can be passed via context
+        path: `/${track.Slug}`,
+        component: path.resolve(`src/templates/track-page.js`),
         context: {
-          id,
+          id: node.id,
         },
       })
     })
 
   })
-}
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  fmImagesToRelative(node) // convert image paths for gatsby images
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
 }

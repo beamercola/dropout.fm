@@ -9,7 +9,9 @@ import Footer from '../components/Footer'
 import slug from '../components/slug'
 
 const TrackPage = ({ data }) => {
-  const { markdownRemark: { frontmatter: track } } = data
+  console.log(data)
+  const { airtable: { data: track } } = data
+  console.log(track)
 
   return (
     <Layout>
@@ -40,26 +42,22 @@ const TrackPage = ({ data }) => {
   )
 }
 
-TrackPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
-
 export default TrackPage
 
 export const pageQuery = graphql`
   query TrackByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    airtable(id: { eq: $id }) {
       id
-      html
-      frontmatter {
-        title,
-        artist,
-        album,
-        year,
-        cover,
-        file,
+      data {
+        Album
+        Artist
+        Date
+        Title
+        Slug
+        Year
+        Cover {
+          url
+        }
       }
     }
   }
