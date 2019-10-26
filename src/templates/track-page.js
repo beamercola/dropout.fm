@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
@@ -9,24 +8,22 @@ import Footer from '../components/Footer'
 import slug from '../components/slug'
 
 const TrackPage = ({ data }) => {
-  console.log(data)
   const { airtable: { data: track } } = data
-  console.log(track)
 
   return (
     <Layout>
       <Helmet titleTemplate="%s">
-        <title>{`${track.artist}: ${track.title} [dropout.fm]`}</title>
+        <title>{`${track.Artist}: ${track.Title} [dropout.fm]`}</title>
         <meta name="description" content={`${track.description}`} />
-        <meta property="og:title" content={`${track.artist}: ${track.title}`} />
-        <meta property="og:description" content={`${track.album} (${track.year})`} />
-        <meta property="og:image" content={`https://dropoutfm.s3.us-west-1.amazonaws.com/${slug(`${track.artist}-${track.album}`)}.png`} />
+        <meta property="og:title" content={`${track.Artist}: ${track.Title}`} />
+        <meta property="og:description" content={`${track.Album} (${track.Year})`} />
+        <meta property="og:image" content={track.Cover.url} />
         <meta property="og:type" content="music.song" />
-        <meta property="og:audio" content={track.file} />
+        <meta property="og:audio" content={track.File} />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:site" content="@beamercola" />
-        <meta property="twitter:title" content={track.title} />
-        <meta property="twitter:description" content={`${track.artist}, ${track.album} (${track.year})`} />
+        <meta property="twitter:title" content={track.Title} />
+        <meta property="twitter:description" content={`${track.Artist}, ${track.Album} (${track.Year})`} />
       </Helmet>
       <div className="flex flex-col sm:items-center sm:justify-center sm:w-screen sm:h-screen p-4">
         <PlayerCard track={track} />
@@ -55,6 +52,7 @@ export const pageQuery = graphql`
         Title
         Slug
         Year
+        File
         Cover {
           url
         }

@@ -3,7 +3,7 @@ import Subscribe from '../components/Subscribe'
 import Footer from '../components/Footer'
 
 import Layout from '../components/Layout'
-const IndexPage = ({ data }) => {
+const Home = ({ data }) => {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center w-screen h-screen p-4">
@@ -19,4 +19,4 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default Home

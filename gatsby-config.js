@@ -14,7 +14,7 @@ module.exports = {
           { tableName: `Tracks`, baseId: `appXGWb8lSzKbGmMI` }
         ]
       }
-    },  
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

@@ -1,14 +1,12 @@
 const _ = require('lodash')
 const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   return graphql(`
     {
-      allAirtable {
+      allAirtable(sort: {fields: data___Date, order: DESC}, filter: {data: {Date: {ne: null}}}) {
         nodes {
           id
           data {
@@ -23,7 +21,9 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    result.data.allAirtable.nodes.forEach(node => {
+    const nodes = result.data.allAirtable.nodes
+
+    nodes.forEach(node => {
       const track = node.data
       createPage({
         path: `/${track.Slug}`,
@@ -32,6 +32,13 @@ exports.createPages = ({ actions, graphql }) => {
           id: node.id,
         },
       })
+    })
+
+    createRedirect({
+      fromPath: `/`,
+      toPath: `/${nodes[0].data.Slug}`,
+      isPermanent: false,
+      redirectInBrowser: true,
     })
 
   })
