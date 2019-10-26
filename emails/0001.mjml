@@ -1,0 +1,88 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 76&deg; and sunny<br /><br />
+          thanks so much for subscribing everyone.<br />hmu on twitter (@beamercola)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://d2ddoduugvun08.cloudfront.net/items/471H44293s1g0S1V3R45/untitled.jpeg" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://en.wikipedia.org/wiki/André_Bloc">Andr&#233; Bloc</a><br />
+          "Habitacle"<br />
+          1960
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-spacer height="50px" />
+
+    <mj-section>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/rob-mounsey-flying-monkey-orchestra-3-moons/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/rob-mounsey-flying-monkey-orchestra-dig.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/rob-mounsey-flying-monkey-orchestra-3-moons/">3 Moons</a><br />
+          Rob Mounsey + Flying Monkey Orchestra<br />
+          Dig (1990)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/nobuyasu-okabayashi-midnight-train/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/nobuyasu-okabayashi-serenade.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/nobuyasu-okabayashi-midnight-train/">Midnight Train</a><br />
+          Nobuyasu Okabayashi<br />
+          Serenade (1978)
+        </mj-text> 
+      </mj-column>     
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/joyride-glamour/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/joyride-joyride.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/joyride-glamour/">Glamour</a><br />
+          Joyride<br />
+          Joyride (1991)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/hoelderlin-the-shouter/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/hoelderlin-new-faces.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/hoelderlin-the-shouter/">The Shouter</a><br />
+          Hoelderlin<br />
+          New Faces (1979)
+        </mj-text> 
+      </mj-column>     
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/noriki-you-can-make-it/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/noriki-dream-cruise.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/noriki-you-can-make-it/">You Can Make It</a><br />
+          Noriki<br />
+          Dream Cruise (1984)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

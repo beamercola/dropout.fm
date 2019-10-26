@@ -1,0 +1,87 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 77&deg; and sunny<br /><br />
+          thanks for subscribing, hmu on twitter (@beamercola)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://dl.airtable.com/.attachmentThumbnails/f9fe4bc195f25c3d12078e09a5e628d3/7629ca81" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          Louis Wain<br />
+          1914
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-spacer height="50px" />
+
+    <mj-section>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/laura-allan-opening-up-to-you/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/laura-allan-laura-allan.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/laura-allan-opening-up-to-you/">Laura Allan</a><br />
+          Opening Up To You<br />
+          Laura Allan (1978)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/dancing-fantasy-quiet-beauty/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/dancing-fantasy-moonlight-reflections.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/dancing-fantasy-quiet-beauty/">Quiet Beauty</a><br />
+          Dancing Fantasy<br />
+          Moonlight Reflections (1992)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/sea-level-living-in-a-dream/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/sea-level-on-the-edge.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/sea-level-living-in-a-dream/">Living In A Dream</a><br />
+          Sea Level<br />
+          On The Edge (1978)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/penguin-cafe-orchestra-cutting-branches-for-a-temporary-shelter/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/penguin-cafe-orchestra-penguin-cafe-orchestra.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/penguin-cafe-orchestra-cutting-branches-for-a-temporary-shelter/">Cutting Branches for a Temporary Shelter</a><br />
+          Penguin Cafe Orchestra<br />
+          Penguin Cafe Orchestra (1981)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/hiroshi-sato-akanegumo-no-machi/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/hiroshi-sato-time.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/hiroshi-sato-akanegumo-no-machi/">Akanegumo-No Machi</a><br />
+          Hiroshi Sato<br />
+          Time (1977)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
