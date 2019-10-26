@@ -1,0 +1,88 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 64&deg; and sunny<br /><br />
+          thanks for subscribing, hmu on twitter (@beamercola)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://dl.airtable.com/.attachmentThumbnails/d66a5aebe39331fe9d2521bc99ced669/d91b1c6c" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          Hiroshi Nagai
+          "Tennis Camp"<br />
+          JCA Annual 4, 1982
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-spacer height="50px" />
+
+    <mj-section>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/chris-rainbow-tarzana-reseda/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/chris-rainbow-home-of-the-brave.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/chris-rainbow-tarzana-reseda/">Tarzana Reseda</a><br />
+          Chris Rainbow<br />
+          Home Of The Brave (1975)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/bruce-becvar-easy-street/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/bruce-becvar-take-it-to-heart.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/bruce-becvar-easy-street/">Easy Street</a><br />
+          Bruce BecVar<br />
+          Take It To Heart (1986)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/horii-katsumi-project-walking-on-the-air/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/horii-katsumi-project-summers.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/horii-katsumi-project-walking-on-the-air/">Walking On The Air</a><br />
+          Horii Katsumi Project<br />
+          Summer's (1990)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/bhekumuzi-luthuli-ipiki-nefosholo/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/bhekumuzi-luthuli-ngidedele.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/bhekumuzi-luthuli-ipiki-nefosholo/">Ipiki Nefosholo</a><br />
+          Bhekumuzi Luthuli<br />
+          New Ngidedele (1994)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/masaru-imada-morning-dream/" src="https://dropoutfm.s3.us-west-1.amazonaws.com/masaru-imada-andalusian-breeze.png" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/masaru-imada-morning-dream/">Morning Dream</a><br />
+          Masaru Imada<br />
+          Andalusian Breeze (1980)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
