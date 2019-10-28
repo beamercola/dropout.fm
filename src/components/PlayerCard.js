@@ -26,7 +26,7 @@ const Player = withCustomAudio(props => {
 
   return (
     <div className="card flex flex-col sm:w-96 w-auto dark:bg-gray-800 dark:text-indigo-200 flex-shrink-0">
-      <img className="h-auto sm:h-96 border-b border-black cursor-pointer" src={track.Cover.url} onClick={() => play()} alt={track.title} />
+      <img className="h-auto sm:h-96 border-b border-black cursor-pointer" src={track.Cover[0].url} onClick={() => play()} alt={track.Title} />
       <section className="px-3 py-2 flex items-center cursor-pointer" onClick={() => play()}>
         <div className="flex-grow">
           <h1 className="font-bold">{track.Title}</h1>

@@ -17,7 +17,7 @@ const TrackPage = ({ data }) => {
         <meta name="description" content={`${track.description}`} />
         <meta property="og:title" content={`${track.Artist}: ${track.Title}`} />
         <meta property="og:description" content={`${track.Album} (${track.Year})`} />
-        <meta property="og:image" content={track.Cover.url} />
+        <meta property="og:image" content={track.Cover[0].url} />
         <meta property="og:type" content="music.song" />
         <meta property="og:audio" content={track.File} />
         <meta property="twitter:card" content="summary" />
