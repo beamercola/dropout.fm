@@ -1,0 +1,88 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 41&deg; and sunny in Yosemite<br /><br />
+          thanks for subscribing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://dl.airtable.com/.attachmentThumbnails/ba8cefd2a0e361d1862048403c73d7dc/dbad3a5f" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          "Bowl with Human Feet"<br />
+          Egypt<br />
+          3900–3650 B.C
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-spacer height="50px" />
+
+    <mj-section>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/peter-white-smooth-sailing/" src="https://dl.airtable.com/.attachmentThumbnails/58e82217cb70badc8d61122f33ce559a/f7c655c9" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/peter-white-smooth-sailing/">Smooth Sailing</a><br />
+          Peter White<br />
+          Excusez-Moi (1991)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/stephen-bishop-sinking-in-an-ocean-of-tears/" src="https://dl.airtable.com/.attachmentThumbnails/a50460227fd20f860409d9e71a5e51dc/51e3a21e" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/stephen-bishop-sinking-in-an-ocean-of-tears/">Sinking In An Ocean Of Tears</a><br />
+          Stephen Bishop<br />
+          Careless (1976)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/sugar-babe-full-palm-rain/" src="https://dl.airtable.com/.attachmentThumbnails/1ee0a959954ff11c6a5b8df94c1ee38a/af7f5822" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/sugar-babe-full-palm-rain/">Full Palm Rain</a><br />
+          Sugar Babe<br />
+          Songs (1975)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/ralf-illenberger-fun-tango/" src="https://dl.airtable.com/.attachmentThumbnails/0cdf7771b9bc86bbc59896f9694428be/57682bc0" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/ralf-illenberger-fun-tango/">Fun Tango</a><br />
+          Ralf Illenberger<br />
+          Heart &amp; Beat (1989)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/frankie-valli-swearin-to-god/" src="https://dl.airtable.com/.attachmentThumbnails/4b82d5d3f32d401a31a017dc5e163997/1726e565" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/frankie-valli-swearin-to-god/">Swearin' To God</a><br />
+          Frankie Valli<br />
+          Closeup (1975)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

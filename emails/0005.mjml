@@ -1,0 +1,87 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 88&deg; and sunny<br /><br />
+          thanks for subscribing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://dl.airtable.com/.attachmentThumbnails/45b7e5cecf8f02f21d56cc8f1d2706c1/3a460f61" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          Hisao Kawada<br />
+          1984
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-spacer height="50px" />
+
+    <mj-section>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/ned-doheny-funky-love/" src="https://dl.airtable.com/.attachmentThumbnails/8f8da8a33fc846c7f24f35e2ea8edbe9/2fae2386" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/ned-doheny-funky-love/">Funky Love</a><br />
+          Ned Doheny<br />
+          Prone (1979)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/the-rippingtons-aspen/" src="https://dl.airtable.com/.attachmentThumbnails/482aed078f914d9fc1d9556a822736fe/9d79106c" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/the-rippingtons-aspen/">Aspen</a><br />
+          The Rippingtons<br />
+          Curves Ahead (1991)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/michael-rother-katzenmusik-9/" src="https://dl.airtable.com/.attachmentThumbnails/b74b264eec73e377b91c6c8a90a35d83/2421e62f" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/michael-rother-katzenmusik-9/">KM 9</a><br />
+          Michael Rother<br />
+          Katzenmusik (1979)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/ippu-do-night-mirage/" src="https://dl.airtable.com/.attachmentThumbnails/d46f0d175b400ce278405322025d4f37/d8b20106" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/ippu-do-night-mirage/">African Nights</a><br />
+          Ippu Do<br />
+          Night Mirage (1983)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/dave-grusin-glissade/" src="https://dl.airtable.com/.attachmentThumbnails/cf407b50a04cc1b244717373f5b009d7/fee82266" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/dave-grusin-glissade/">Glissade</a><br />
+          Dave Grusin &amp; Don Grusin<br />
+          Sticks and Stones (1988)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

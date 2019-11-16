@@ -11,7 +11,8 @@ module.exports = {
       options: {
         apiKey: `keykQ5QsyEHYOaFAL`, // may instead specify via env, see below
         tables: [
-          { tableName: `Tracks`, baseId: `appXGWb8lSzKbGmMI` }
+          { tableName: `Tracks`, baseId: `appXGWb8lSzKbGmMI` },
+          { tableName: `Mixes`, baseId: `appXGWb8lSzKbGmMI` }
         ]
       }
     },
