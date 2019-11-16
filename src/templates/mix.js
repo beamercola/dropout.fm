@@ -22,8 +22,7 @@ const Mix = ({ data }) => {
     <Layout>
       <Helmet>
         <title>{`[dropout.fm] week ${mix.Slug}`}</title>
-        <meta property="og:title" content={`[dropout.fm]`} />
-        <meta property="og:description" content={`week ${mix.Slug}`} />
+        <meta property="og:title" content={`[dropout.fm] week ${mix.Slug}`} />
         <meta property="og:image" content={mix.Image[0].url} />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:site" content="@beamercola" />

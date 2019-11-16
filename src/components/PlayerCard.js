@@ -33,6 +33,7 @@ const Player = withCustomAudio(props => {
     soundCloudAudio.on("ended", () => {
       onAudioEnded();
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const play = () => {

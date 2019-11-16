@@ -17,18 +17,6 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: []
-      }
-    },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
-      }
-    },
-    {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint:

@@ -1,17 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import useSiteMetadata from "./SiteMetadata";
 
-const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+const Layout = ({ children }) => {
   return (
     <>
       <Helmet
         bodyAttributes={{ class: "font-mono bg-canvas dark:bg-gray-900" }}
       >
         <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script type="text/javascript">
           {`
@@ -29,4 +25,4 @@ const TemplateWrapper = ({ children }) => {
   );
 };
 
-export default TemplateWrapper;
+export default Layout;

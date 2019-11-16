@@ -2,7 +2,7 @@ import React from "react";
 import Subscribe from "../components/Subscribe";
 
 import Layout from "../components/Layout";
-const Home = ({ data }) => {
+const Index = ({ data }) => {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center w-screen h-screen p-4">
@@ -21,4 +21,4 @@ const Home = ({ data }) => {
   );
 };
 
-export default Home;
+export default Index;

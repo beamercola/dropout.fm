@@ -71,7 +71,7 @@ exports.createPages = ({ actions, graphql }) => {
       const track = node.data;
       createPage({
         path: `/${track.Slug}`,
-        component: path.resolve(`src/templates/track-page.js`),
+        component: path.resolve(`src/templates/track.js`),
         context: {
           id: node.id
         }
