@@ -12,8 +12,8 @@ const TrackPage = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet titleTemplate="%s">
-        <title>{`${track.Artist}: ${track.Title} [dropout.fm]`}</title>
+      <Helmet>
+        <title>{`[dropout.fm] ${track.Artist}: ${track.Title}`}</title>
         <meta name="description" content={`${track.description}`} />
         <meta property="og:title" content={`${track.Artist}: ${track.Title}`} />
         <meta
