@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Subscribe from "../components/Subscribe";
 
 import Layout from "../components/Layout";
 const Home = ({ data }) => {
@@ -14,7 +14,7 @@ const Home = ({ data }) => {
           <label className="text-xs px-3 mb-2 block">
             join the newsletter, saturday mornings
           </label>
-          <Footer />
+          <Subscribe />
         </div>
       </div>
     </Layout>

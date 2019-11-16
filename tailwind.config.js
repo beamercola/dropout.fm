@@ -22,7 +22,7 @@ module.exports = {
   },
   variants: {
     borderWidth: ["last"],
-    padding: ["even"]
+    padding: ["even", "responsive"]
   },
   plugins: []
 };

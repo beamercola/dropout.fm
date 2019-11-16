@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PlayerCard from "../components/PlayerCard";
-import Footer from "../components/Footer";
+import Subscribe from "../components/Subscribe";
 
 const TrackPage = ({ data }) => {
   const {
@@ -32,15 +32,11 @@ const TrackPage = ({ data }) => {
         />
       </Helmet>
       <div className="flex flex-col sm:items-center sm:justify-center sm:w-screen sm:h-screen p-4">
-        <PlayerCard track={track} />
+        <div className="sm:max-w-md">
+          <PlayerCard track={track} />
 
-        <div className="sm:w-96 mt-6 sm:mt-10">
-          <label className="text-xs px-3 mb-2 block dark:text-gray-600">
-            join the newsletter, saturday mornings
-          </label>
+          <Subscribe className="mt-8" labelClassName="mx-3" />
         </div>
-
-        <Footer />
       </div>
     </Layout>
   );
