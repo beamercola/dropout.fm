@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Progress, Timer } from "react-soundplayer/components";
 import { withCustomAudio } from "react-soundplayer/addons";
 import { debounce } from "throttle-debounce";
@@ -29,6 +29,12 @@ const Player = withCustomAudio(props => {
     streamUrl
   } = props;
 
+  useEffect(() => {
+    soundCloudAudio.on("ended", () => {
+      onAudioEnded();
+    });
+  }, []);
+
   const play = () => {
     if (playing) {
       soundCloudAudio.pause();
@@ -45,10 +51,6 @@ const Player = withCustomAudio(props => {
     forcePlay();
     unsetAutoplay();
   }
-
-  soundCloudAudio.on("ended", () => {
-    onAudioEnded();
-  });
 
   const icon = playing ? (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

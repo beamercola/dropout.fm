@@ -126,7 +126,7 @@ const Playlist = ({ tracks, currentTrack, setAutoplay, setCurrentTrack }) => (
         >
           <img
             className={`h-16 mr-3 border-2 border-transparent ${active &&
-              "border-black dark:border-white"}`}
+              "border-white"}`}
             src={track.Cover[0].url}
             alt={track.Album}
           />
