@@ -6,7 +6,10 @@ exports.createPages = ({ actions, graphql }) => {
 
   const mixes = graphql(`
     {
-      allAirtable(filter: { table: { eq: "Mixes" } }) {
+      allAirtable(
+        filter: { table: { eq: "Mixes" } }
+        sort: { fields: data___Slug, order: DESC }
+      ) {
         nodes {
           recordId
           data {
@@ -32,6 +35,13 @@ exports.createPages = ({ actions, graphql }) => {
           recordId: node.recordId
         }
       });
+    });
+
+    createRedirect({
+      fromPath: `/`,
+      toPath: `/week/${nodes[0].data.Slug}`,
+      isPermanent: false,
+      redirectInBrowser: true
     });
   });
 
@@ -66,13 +76,6 @@ exports.createPages = ({ actions, graphql }) => {
           id: node.id
         }
       });
-    });
-
-    createRedirect({
-      fromPath: `/`,
-      toPath: `/${nodes[0].data.Slug}`,
-      isPermanent: false,
-      redirectInBrowser: true
     });
   });
 

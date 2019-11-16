@@ -4,12 +4,19 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Subscribe from "../components/Subscribe";
 import PlayerCard from "../components/PlayerCard";
+import { debounce } from "throttle-debounce";
 
 const Mix = ({ data }) => {
   const { data: mix } = data.mix;
-
   const tracks = data.tracks.nodes.map(t => t.data);
   const [currentTrack, setCurrentTrack] = useState(0);
+  const [autoplay, setAutoplay] = useState(false);
+
+  const skip = debounce(1000, () => {
+    const index = currentTrack >= tracks.length - 1 ? 0 : currentTrack + 1;
+    setCurrentTrack(index);
+    setAutoplay(true);
+  });
 
   return (
     <Layout>
@@ -20,43 +27,41 @@ const Mix = ({ data }) => {
           <span>
             {mix.Slug > 1 && (
               <Link
-                className="underline mr-3"
+                className="underline"
                 to={`/week/${parseInt(mix.Slug) - 1}`}
               >
-                prev
+                &larr;
               </Link>
             )}
+            <span className="mx-3">week {mix.Slug}</span>
             {mix.Slug < data.mixCount.totalCount && (
               <Link
-                className="underline mr-4"
+                className="underline"
                 to={`/week/${parseInt(mix.Slug) + 1}`}
               >
-                next
+                &rarr;
               </Link>
             )}
-            week {mix.Slug}
           </span>
         </header>
 
         <div className="flex flex-col -mx-12 order-1 lg:flex-row">
           <div className="mb-12 lg:w-1/3 px-12">
-            <div className="dark:text-gray-600">
-              <img className="w-8/12" src={mix.Image[0].url} alt="" />
-              <p className="py-2 text-base">
-                {mix.Message &&
-                  mix.Message.split("\n").map((item, key) => (
-                    <React.Fragment key={key}>
-                      {item}
-                      <br />
-                    </React.Fragment>
-                  ))}
-              </p>
+            <img className="w-8/12" src={mix.Image[0].url} alt="" />
+            <p className="py-2 text-base dark:text-gray-500">
+              {mix.Message &&
+                mix.Message.split("\n").map((item, key) => (
+                  <React.Fragment key={key}>
+                    {item}
+                    <br />
+                  </React.Fragment>
+                ))}
+            </p>
 
-              <Subscribe
-                className="mt-8 hidden lg:block"
-                inputClassName="-ml-3 w-11/12"
-              />
-            </div>
+            <Subscribe
+              className="mt-8 hidden lg:block"
+              inputClassName="-ml-3 w-11/12"
+            />
           </div>
 
           <div className="lg:w-1/3 mb-12 px-12 order-3 lg:order-2">
@@ -67,23 +72,28 @@ const Mix = ({ data }) => {
                   <div
                     className={`flex items-center px-2 py-2 border-b border-black cursor-pointer last:border-b-0 ${active &&
                       "bg-yellow-300 dark:bg-indigo-700"}`}
-                    onClick={() => setCurrentTrack(key)}
+                    onClick={() => {
+                      setAutoplay(true);
+                      setCurrentTrack(key);
+                    }}
                     key={track.Title}
                   >
                     <img
                       className={`h-16 mr-3 border-2 border-transparent ${active &&
-                        "border-white"}`}
+                        "border-black dark:border-white"}`}
                       src={track.Cover[0].url}
                       alt={track.Album}
                     />
                     <div
-                      className={`${
+                      className={`flex-grow ${
                         active ? "dark:text-white" : "dark:text-indigo-200"
                       }`}
                     >
-                      <p className="block text-sm">{track.Title}</p>
+                      <p className="block text-sm font-bold">{track.Title}</p>
                       <p className="text-xs">{track.Artist}</p>
-                      <p className="text-xs">({track.Year})</p>
+                      <p className="text-xs">
+                        {track.Album} ({track.Year})
+                      </p>
                     </div>
                   </div>
                 );
@@ -92,7 +102,14 @@ const Mix = ({ data }) => {
           </div>
 
           <div className="px-12 order-2 lg:order-3 lg:w-1/3 mb-12">
-            <PlayerCard track={tracks[currentTrack]} />
+            <PlayerCard
+              autoplay={autoplay}
+              unsetAutoplay={() => setAutoplay(false)}
+              track={tracks[currentTrack]}
+              onAudioEnded={() => {
+                skip();
+              }}
+            />
           </div>
 
           <div className="order-4 mt-8 px-12 lg:hidden">

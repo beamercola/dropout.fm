@@ -1,23 +1,54 @@
 import React from "react";
 import { Progress, Timer } from "react-soundplayer/components";
 import { withCustomAudio } from "react-soundplayer/addons";
-import slug from "../components/slug";
+import { debounce } from "throttle-debounce";
 
-const PlayerCard = ({ track }) => (
-  <Player streamUrl={track.File} track={track} slug={slug} clientId="X" />
-);
+const PlayerCard = ({ autoplay, unsetAutoplay, track, onAudioEnded }) => {
+  return (
+    <Player
+      autoplay={autoplay}
+      unsetAutoplay={unsetAutoplay}
+      key={`track-${track.Slug}`}
+      streamUrl={track.File}
+      track={track}
+      clientId="X"
+      onAudioEnded={onAudioEnded}
+    />
+  );
+};
 
 const Player = withCustomAudio(props => {
-  const { soundCloudAudio, playing, track, currentTime } = props;
-  const currentTrack = track;
+  const {
+    autoplay,
+    unsetAutoplay,
+    soundCloudAudio,
+    playing,
+    track,
+    currentTime,
+    onAudioEnded,
+    streamUrl
+  } = props;
 
   const play = () => {
     if (playing) {
       soundCloudAudio.pause();
     } else {
-      soundCloudAudio.play();
+      soundCloudAudio.play({ streamUrl });
     }
   };
+
+  const forcePlay = debounce(1000, () => {
+    soundCloudAudio.play({ streamUrl });
+  });
+
+  if (autoplay) {
+    forcePlay();
+    unsetAutoplay();
+  }
+
+  soundCloudAudio.on("ended", () => {
+    onAudioEnded();
+  });
 
   const icon = playing ? (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -39,19 +70,19 @@ const Player = withCustomAudio(props => {
     <div className="card dark:bg-gray-800 dark:text-indigo-200">
       <img
         className="border-b border-black cursor-pointer w-full"
-        src={currentTrack.Cover[0].url}
+        src={track.Cover[0].url}
         onClick={() => play()}
-        alt={currentTrack.Title}
+        alt={track.Title}
       />
       <section
         className="px-3 py-2 flex items-center cursor-pointer"
         onClick={() => play()}
       >
         <div className="flex-grow">
-          <h1 className="font-bold">{currentTrack.Title}</h1>
-          <h2 className="">{currentTrack.Artist}</h2>
+          <h1 className="font-bold">{track.Title}</h1>
+          <h2 className="">{track.Artist}</h2>
           <div className="">
-            {currentTrack.Album}, {currentTrack.Year}
+            {track.Album} ({track.Year})
           </div>
         </div>
         <div className="flex-shrink h-6 w-6 mr-2 -mt-1">{icon}</div>
@@ -59,7 +90,7 @@ const Player = withCustomAudio(props => {
       <section className="relative px-3 py-2 border-t border-black cursor-pointer">
         <Timer
           className="custom-player-timer z-20 relative pointer-events-none"
-          duration={currentTrack ? currentTrack.duration / 1000 : 0}
+          duration={track ? track.duration / 1000 : 0}
           currentTime={currentTime}
           {...props}
         />
