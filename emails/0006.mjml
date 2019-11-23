@@ -1,0 +1,87 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 81&deg; and sunny<br /><br />
+          thanks for subscribing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://dl.airtable.com/.attachmentThumbnails/29d04bec2283b56fdb08b8404d907096/4b77ef24" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          Le Clic: Tuff 35<br />
+          1990
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-spacer height="50px" />
+
+    <mj-section>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/week/6" src="https://dl.airtable.com/.attachmentThumbnails/15036baa090ce93eee077b07497b3be4/9e5ea115" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/acoustic-alchemy-mr-chow/">Mr. Chow</a><br />
+          Acoustic Alchemy<br />
+          Red Dust &amp; Spanish Lace (1987)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/week/6" src="https://dl.airtable.com/.attachmentThumbnails/1e836ab884f4ecebc437999c7733f585/47b644a2" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/week/6">Do You Believe In Love</a><br />
+          Paul Davis<br />
+          Paul Davis (1980)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/week/6" src="https://dl.airtable.com/.attachmentThumbnails/40e9beaaa40f77b71608ccf3e0a41e87/2997b43e" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/week/6">Point Of Egression</a><br />
+          Colin Chin<br />
+          Intruding On A Silence (1988)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/week/6" src="https://dl.airtable.com/.attachmentThumbnails/5d7b323d3bfb481e48df59a05ae91c07/76b7f53b" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/week/6">Luminescence</a><br />
+          Tatsuro Yamashita<br />
+          Boy In Me (1988)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150" height="150px" href="https://dropout.fm/week/6" src="https://dl.airtable.com/.attachmentThumbnails/126b7a9a9d80b8d109fd7de59fd15df5/3bd28647" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/week/6">Words</a><br />
+          F.R. David<br />
+          Words (1982)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

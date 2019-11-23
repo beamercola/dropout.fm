@@ -1,0 +1,95 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 70&deg; and sunny<br /><br />
+          thanks for subscribing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://dl.airtable.com/.attachmentThumbnails/ae8d87c1b5e97106cc68e0302747b589/f2d7e74d" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          Peggy Oki<br />
+          by James O'Mahoney<br />
+          1975
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="20px" padding-bottom="20px">
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/week/7">
+            &#9654; Listen to full mix here
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/gilberto-gil-sarara-miolo" src="https://dl.airtable.com/.attachmentThumbnails/188c80eb6731ac7a38bb778582cab599/6878e0d9" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/gilberto-gil-sarara-miolo/">Sarará Miolo</a><br />
+          Gilberto Gil<br />
+          Realce (1979)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/chu-kosaka-main-street" src="https://dl.airtable.com/.attachmentThumbnails/e86a354cf06be16a3687a55f2a7024cd/b2a3668f" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/chu-kosaka-main-street">Main Street</a><br />
+          Chu Kosaka<br />
+          Seemingly (1973)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/larry-lee-hang-on" src="https://dl.airtable.com/.attachmentThumbnails/77111f8b7c517c723c079d48917dfbad/57ad9a6b" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/larry-lee-hang-on">Hang On</a><br />
+          Larry Lee<br />
+          Marooned (1982)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/richard-souther-high-tide" src="https://dl.airtable.com/.attachmentThumbnails/4cd1a8d93fe3b24f433d89ab4482b5b4/8fed1a9c" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/richard-souther-high-tide">High Tide</a><br />
+          Richard Souther<br />
+          Cross Currents (1989)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/joan-bibiloni-silencio-roto" src="https://dl.airtable.com/.attachmentThumbnails/8a77bfd592393fd191a44c91768525fd/5ea678f1" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/joan-bibiloni-silencio-roto">Migas</a><br />
+          Joan Bibiloni<br />
+          Silencio Roto (1987)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
