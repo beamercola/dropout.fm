@@ -67,7 +67,7 @@ const EmailTemplate = ({ data }) => {
                   href={`https://dropout.fm/${track.Slug}`}
                   {...textAttributes}
                 >
-                  {track.Title}
+                  <MjmlText {...textAttributes}>{track.Title}</MjmlText>
                 </a>
                 <br />
                 {track.Artist}

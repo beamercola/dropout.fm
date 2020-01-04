@@ -24,7 +24,10 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    const nodes = result.data.allAirtable.nodes;
+    const nodes = result.data.allAirtable.nodes
+      .sort((a, b) => parseInt(a.data.Slug) > parseInt(b.data.Slug))
+      .reverse();
+
     nodes.forEach(node => {
       const mix = node.data;
       createPage({
