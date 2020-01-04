@@ -11,8 +11,8 @@ import {
   MjmlSpacer,
 } from "mjml-react";
 
-const textAttribues = {
-  "font-family": "'Andale Mono', CourierNewPSMT, monospace",
+const textAttributes = {
+  fontFamily: "'Andale Mono', CourierNewPSMT, monospace",
   "line-height": "20px",
 };
 
@@ -22,10 +22,10 @@ const EmailTemplate = ({ data }) => {
 
   const { html } = render(
     <Mjml>
-      <MjmlBody>
+      <MjmlBody backgroundColor="#fff">
         <MjmlSection>
           <MjmlColumn>
-            <MjmlText {...textAttribues}>
+            <MjmlText {...textAttributes}>
               happy saturday
               <br />
               it's {mix.Weather}
@@ -41,7 +41,7 @@ const EmailTemplate = ({ data }) => {
             <MjmlImage align="left" src={mix.Image[0].url} alt="" />
           </MjmlColumn>
           <MjmlColumn>
-            <MjmlText {...textAttribues}>
+            <MjmlText {...textAttributes}>
               {mix.Message.split("\n").map((item, key) => (
                 <React.Fragment key={key}>
                   {item}
@@ -54,7 +54,7 @@ const EmailTemplate = ({ data }) => {
         </MjmlSection>
         <MjmlSection>
           {tracks.map(track => (
-            <MjmlColumn width="50%">
+            <MjmlColumn width="50%" key={track.Title}>
               <MjmlImage
                 align="left"
                 width="150px"
@@ -62,8 +62,13 @@ const EmailTemplate = ({ data }) => {
                 href={`https://dropout.fm/${track.Slug}`}
                 src={track.Cover[0].url}
               />
-              <MjmlText {...textAttribues}>
-                <a href={`https://dropout.fm/${track.Slug}`}>{track.Title}</a>
+              <MjmlText {...textAttributes}>
+                <a
+                  href={`https://dropout.fm/${track.Slug}`}
+                  {...textAttributes}
+                >
+                  {track.Title}
+                </a>
                 <br />
                 {track.Artist}
                 <br />
