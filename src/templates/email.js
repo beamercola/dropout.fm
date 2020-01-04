@@ -1,17 +1,11 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
 import {
   render,
   Mjml,
-  MjmlHead,
-  MjmlTitle,
-  MjmlPreview,
   MjmlBody,
   MjmlSection,
   MjmlColumn,
-  MjmlButton,
   MjmlImage,
   MjmlText,
   MjmlSpacer,
