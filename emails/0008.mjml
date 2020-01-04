@@ -1,0 +1,94 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 64&deg; and cloudy<br /><br />
+          thanks for subscribing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://dl.airtable.com/.attachmentThumbnails/b45e9ed23fd8c0ae1d5c37f54c8d738f/e59795ac" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          Jean Dunand<br />
+          (1925)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="20px" padding-bottom="20px">
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/week/8">
+            &#9654; Listen to full mix here
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/lisa-franco-acapulco-express" src="https://dl.airtable.com/.attachmentThumbnails/fccf1d80fe6d3025934b9939e79c1089/ad6bbb7d" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/lisa-franco-acapulco-express/">Acapulco Express</a><br />
+          Lisa Franco<br />
+          My Way (1993)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/davol-crossroads" src="https://dl.airtable.com/.attachmentThumbnails/8c2d7b90bdf927847fc9f9fbe7a969b0/2e0b9e0a" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/davol-crossroads">Crossroads</a><br />
+          Davol<br />
+          Mystic Waters (1989)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/himekami-kin-gin-toh" src="https://dl.airtable.com/.attachmentThumbnails/105198a9a33d93b308125fe46ed2b6d0/e9b172ee" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/himekami-kin-gin-toh">Kin Gin Toh</a><br />
+          Himekami<br />
+          Zipangu (1992)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/vangelis-he-o" src="https://dl.airtable.com/.attachmentThumbnails/f542df90e1c8946bd8cbc5da438eab6c/f693dc2c" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/vangelis-he-o">He-O</a><br />
+          Vangelis<br />
+          Earth (1972)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/ashra-second-movement-six-voices" src="https://dl.airtable.com/.attachmentThumbnails/9880119bf1c78766d819d7b89b3d085b/dd9ceb12" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/ashra-second-movement-six-voices">Second Movement: Six Voices</a><br />
+          Ashra<br />
+          Walkin' The Desert (1989)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

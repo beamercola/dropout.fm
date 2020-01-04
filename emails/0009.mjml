@@ -1,0 +1,94 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          happy saturday<br />
+          it's 64&deg; and cloudy<br /><br />
+          thanks for subscribing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" src="https://dl.airtable.com/.attachmentThumbnails/0d17ae828b4f2f8254bcf8d79348339a/3e7878e8" alt="" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          Honda Cub EZ-90<br />
+          (1991)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="20px" padding-bottom="20px">
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/week/9">
+            &#9654; Listen to full mix here
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/camel-breathless" src="https://dl.airtable.com/.attachmentThumbnails/bb4da534cc2cb1ea04b31c184a03f09b/06b762df" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/camel-breathless/">Breathless</a><br />
+          Camel<br />
+          Breathless (1978)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/hiroshima-heavenly-angel" src="https://dl.airtable.com/.attachmentThumbnails/6772a31ef3d7ec4184bdd38066e0082d/b921593b" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/hiroshima-heavenly-angel">Heavenly Angel</a><br />
+          Hiroshima<br />
+          Third Generation (1983)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/ray-lynch-celestial-soda-pop" src="https://dl.airtable.com/.attachmentThumbnails/afbcbd329941e0632085cdfefa76b747/ef5dc065" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/ray-lynch-celestial-soda-pop">Celestial Soda Pop</a><br />
+          Ray Lynch<br />
+          Deep Breakfast (1986)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/david-casper-the-rosseau-jungle" src="https://dl.airtable.com/.attachmentThumbnails/5f29fe906d43691d8fecba92e657ab06/c1b5cce1" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/david-casper-the-rosseau-jungle">The Rosseau Jungle</a><br />
+          David Casper<br />
+          Another Kind Of Sky (1983)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%">
+        <mj-image align="left" width="150px" height="150px" href="https://dropout.fm/tatsuro-yamashita-christmas-eve" src="https://dl.airtable.com/.attachmentThumbnails/1ff31f5b4d98dc80d6eb6a409307dc56/51b8068e" />
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="https://dropout.fm/tatsuro-yamashita-christmas-eve">Christmas Eve</a><br />
+          Tatsuro Yamashita<br />
+          Christmas Eve (1986)
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="50%"></mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="'Andale Mono', CourierNewPSMT, monospace" line-height="20px">
+          <a href="*|UNSUB|*">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

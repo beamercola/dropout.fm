@@ -32,8 +32,17 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/mix.js`),
         context: {
           slug: mix.Slug,
-          recordId: node.recordId
-        }
+          recordId: node.recordId,
+        },
+      });
+
+      createPage({
+        path: `/week/${mix.Slug}.mjml`,
+        component: path.resolve(`src/templates/email.js`),
+        context: {
+          slug: mix.Slug,
+          recordId: node.recordId,
+        },
       });
     });
 
@@ -41,7 +50,7 @@ exports.createPages = ({ actions, graphql }) => {
       fromPath: `/`,
       toPath: `/week/${nodes[0].data.Slug}`,
       isPermanent: false,
-      redirectInBrowser: true
+      redirectInBrowser: true,
     });
   });
 
@@ -73,11 +82,27 @@ exports.createPages = ({ actions, graphql }) => {
         path: `/${track.Slug}`,
         component: path.resolve(`src/templates/track.js`),
         context: {
-          id: node.id
-        }
+          id: node.id,
+        },
       });
     });
   });
 
   return Promise.all([mixes, tracks]);
+};
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: "empty",
+    },
+    module: {
+      rules: [
+        {
+          test: path.resolve(__dirname, "node_modules/uglify-js/tools/node.js"),
+          loader: "null-loader",
+        },
+      ],
+    },
+  });
 };
