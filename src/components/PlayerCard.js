@@ -9,7 +9,10 @@ const PlayerCard = ({ autoplay, unsetAutoplay, track, onAudioEnded }) => {
       autoplay={autoplay}
       unsetAutoplay={unsetAutoplay}
       key={`track-${track.Slug}`}
-      streamUrl={track.File}
+      streamUrl={
+        track.File ||
+        `https://dropoutfm.s3-us-west-1.amazonaws.com/${track.Slug}.mp3`
+      }
       track={track}
       clientId="X"
       onAudioEnded={onAudioEnded}
@@ -26,7 +29,7 @@ const Player = withCustomAudio(props => {
     track,
     currentTime,
     onAudioEnded,
-    streamUrl
+    streamUrl,
   } = props;
 
   useEffect(() => {
