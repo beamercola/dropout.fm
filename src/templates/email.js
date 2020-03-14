@@ -35,7 +35,6 @@ const EmailTemplate = ({ data }) => {
             </MjmlText>
           </MjmlColumn>
         </MjmlSection>
-
         <MjmlSection>
           <MjmlColumn>
             <MjmlImage align="left" src={mix.Image[0].url} alt="" />
@@ -50,6 +49,19 @@ const EmailTemplate = ({ data }) => {
               ))}
             </MjmlText>
             <MjmlSpacer height="50px" />
+          </MjmlColumn>
+        </MjmlSection>
+        <MjmlSection>
+          <MjmlColumn>
+            <MjmlText {...textAttributes}>
+              <a
+                href={`https://dropout.fm/week/${mix.Slug}`}
+                target="_blank"
+                {...textAttributes}
+              >
+                &#9658;{" Click here to listen to playlist"}
+              </a>
+            </MjmlText>
           </MjmlColumn>
         </MjmlSection>
         <MjmlSection>
