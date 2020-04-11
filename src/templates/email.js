@@ -8,12 +8,12 @@ import {
   MjmlColumn,
   MjmlImage,
   MjmlText,
-  MjmlSpacer,
+  MjmlSpacer
 } from "mjml-react";
 
 const textAttributes = {
   fontFamily: "'Andale Mono', CourierNewPSMT, monospace",
-  "line-height": "20px",
+  "line-height": "20px"
 };
 
 const EmailTemplate = ({ data }) => {
@@ -75,12 +75,7 @@ const EmailTemplate = ({ data }) => {
                 src={track.Cover[0].url}
               />
               <MjmlText {...textAttributes}>
-                <a
-                  href={`https://dropout.fm/${track.Slug}`}
-                  {...textAttributes}
-                >
-                  <MjmlText {...textAttributes}>{track.Title}</MjmlText>
-                </a>
+                <MjmlText {...textAttributes}>{track.Title}</MjmlText>
                 <br />
                 {track.Artist}
                 <br />
