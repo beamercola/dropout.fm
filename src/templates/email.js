@@ -71,7 +71,6 @@ const EmailTemplate = ({ data }) => {
                 align="left"
                 width="150px"
                 height="150px"
-                href={`https://dropout.fm/${track.Slug}`}
                 src={track.Cover[0].url}
               />
               <MjmlText {...textAttributes}>
